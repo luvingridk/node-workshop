@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>xhr</title>
+</head>
+<body>
+    <body>
+        <button id="syncBtn">同步</button>
+        <button id="asyncBtn">非同步</button>
+        <button id="countBtn">測試按鈕</button>
+        <div id="count">0</div>
+        <div id="response">準備要顯示訊息</div>
+    
+        <script>
+          var response = document.getElementById("response");
+          var syncBtn = document.getElementById("syncBtn");
+          syncBtn.addEventListener("click", function () {});
+    
+          var asyncBtn = document.getElementById("asyncBtn");
+          asyncBtn.addEventListener("click", function () {});
+    
+          var countBtn = document.getElementById("countBtn");
+          var count = document.getElementById("count");
+          countBtn.addEventListener("click", function () {
+            count.innerHTML = parseInt(count.innerHTML, 10) + 1;
+          });
+        </script>
+</body>
+</html>
