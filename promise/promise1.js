@@ -25,10 +25,9 @@ job1
   })
 
   .catch((reject) => {
-    // 捕捉上面所有的錯誤
+    // 捕捉錯誤
     console.log("error", reject);
   })
   .finally(() => {
-    // 無論成功或失敗都會在這裡
     console.log("end");
   });
