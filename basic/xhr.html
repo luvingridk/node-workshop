@@ -24,6 +24,9 @@
             response.innerHTML = `同步請求錯誤: ${this.status}`;
           }
         };
+        xhr.onerror = () => {
+          reject(xhr.statusText);
+        };
 
         // methed, url, async(default: true 非同步)
         xhr.open("GET", "http://18.237.113.31:3000/", false);
